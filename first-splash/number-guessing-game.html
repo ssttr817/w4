@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Number guessing game</title>
+    <title>数を当てるゲーム</title>
 
     <style>
       html {
@@ -52,6 +52,9 @@
 
       function checkGuess() {
         const userGuess = Number(guessField.value);
+        
+        console.log(userGuess);
+        
         if (guessCount === 1) {
           guesses.textContent = 'Previous guesses: ';
         }
